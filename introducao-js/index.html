@@ -5,44 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="styles/main2.css">
     </head>
     <body>
+        <form action="#">
         
-        <style>
-            .negrito {
-                font-weight: bold;
-            }
-            .vermelho {
-                color: rgb(245, 26, 99);
-            }
-            .caixa-alta {
-                text-transform: uppercase;
-            }
-
-        </style>
-
-        <input type="text" 
+            <input type="text"
         name="usuario" 
         id="loginUsuario" 
-        placeholder="Usuário">
+        placeholder="Usuário"
+        class="elemento-sozinho">
+       
+        
        
         <input type="password" 
         name="senha" 
         id="senhaUsuario" 
-        placeholder="Senha">
+        placeholder="Senha"
+        class="elemento-sozinho">
 
-        <button onclick="exibir()">Entrar</button>
+
+        <button class="elemento-sozinho" onclick="exibir()">Entrar</button>
 
         <p>	
-            Leia o 
-            <span class="negrito caixa-alta vermelho"> contrato</span> 
+            Leia o
+            <span style="color:rgb(94, 13, 243);font-weight:bold">contrato</span>
             abaixo e depois
-            <span class="negrito caixa-alta vermelho">assine</span>
+            <span  style="color:rgb(94, 13, 243);font-weight:bold">assine</span>
             envie por 
-            <span class="negrito caixa-alta vermelho">e-mail</span></p>
-
+            <span style="color:rgb(94, 13, 243);font-weight:bold">e-mail</span></p>
             <span id="exibirDadosLogin"></span>
-
+        </form>
     <script>
         function exibir(){
             console.log("oi! cheguei");
