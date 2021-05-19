@@ -14,8 +14,9 @@
         name="usuario" 
         id="loginUsuario" 
         placeholder="Usuário"
-        class="elemento-sozinho">
-       
+        class="elemento-sozinho"
+        onkeyup="validarDigitacao(this)"
+        value="">
         
        
         <input type="password" 
@@ -36,12 +37,23 @@
             <span style="color:rgb(94, 13, 243);font-weight:bold">e-mail</span></p>
             <span id="exibirDadosLogin"></span>
         </form>
-    <script>
+   
+   <span id="introducao-js-exibir-Dados-Login"></span>
+   
+   <script>
         function exibir(){
             console.log("oi! cheguei");
           alert("eu sou um alert");
         }
         
+        function validarDigitacao(event){
+            console.log("tag");
+            console.log("tag.value");
+            let tagSpan = document.getElementById("introducao-js-exibir-Dados-Login")
+            console.log(tagSpan);
+        }
     </script>
+   
+
     </body>
     </html>
